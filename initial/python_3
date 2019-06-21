@@ -1,0 +1,29 @@
+def capture(a):
+    # your code here
+    return None
+
+
+if __name__ == '__main__':
+    print("Example:")
+    print(capture([[0, 1, 0, 1, 0, 1],
+ [1, 8, 1, 0, 0, 0],
+ [0, 1, 2, 0, 0, 1],
+ [1, 0, 0, 1, 1, 0],
+ [0, 0, 0, 1, 3, 1],
+ [1, 0, 1, 0, 1, 2]]))
+
+    # These "asserts" are used for self-checking and not for an auto-testing
+    assert capture([[0, 1, 0, 1, 0, 1],
+ [1, 8, 1, 0, 0, 0],
+ [0, 1, 2, 0, 0, 1],
+ [1, 0, 0, 1, 1, 0],
+ [0, 0, 0, 1, 3, 1],
+ [1, 0, 1, 0, 1, 2]]) == 8
+    assert capture([[0, 1, 0, 1, 0, 1],
+ [1, 1, 1, 0, 0, 0],
+ [0, 1, 2, 0, 0, 1],
+ [1, 0, 0, 1, 1, 0],
+ [0, 0, 0, 1, 3, 1],
+ [1, 0, 1, 0, 1, 2]]) == 4
+    assert capture([[0, 1, 1], [1, 9, 1], [1, 1, 9]]) == 9
+    print("Coding complete? Click 'Check' to earn cool rewards!")

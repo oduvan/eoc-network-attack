@@ -1,0 +1,33 @@
+
+export function capture(a) {
+
+    // your code here
+    return undefined;
+}
+
+import * as assert from 'assert';
+console.log('Example:');
+console.log(capture([[0, 1, 0, 1, 0, 1],
+ [1, 8, 1, 0, 0, 0],
+ [0, 1, 2, 0, 0, 1],
+ [1, 0, 0, 1, 1, 0],
+ [0, 0, 0, 1, 3, 1],
+ [1, 0, 1, 0, 1, 2]]));
+
+// These "asserts" are used for self-checking
+assert.equal(capture([[0, 1, 0, 1, 0, 1],
+ [1, 8, 1, 0, 0, 0],
+ [0, 1, 2, 0, 0, 1],
+ [1, 0, 0, 1, 1, 0],
+ [0, 0, 0, 1, 3, 1],
+ [1, 0, 1, 0, 1, 2]]), 8);
+assert.equal(capture([[0, 1, 0, 1, 0, 1],
+ [1, 1, 1, 0, 0, 0],
+ [0, 1, 2, 0, 0, 1],
+ [1, 0, 0, 1, 1, 0],
+ [0, 0, 0, 1, 3, 1],
+ [1, 0, 1, 0, 1, 2]]), 4);
+assert.equal(capture([[0, 1, 1], [1, 9, 1], [1, 1, 9]]), 9);
+
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
+    
